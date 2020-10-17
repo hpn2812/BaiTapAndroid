@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileApp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBEFFB">
+        <ImageView
+            android:layout_marginTop="-90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bia"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_camera_alt_24"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_marginTop="170dp"
+
+            />
+      <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/nen"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            />
+
+        <TextView
+            android:id="@+id/txtEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:textStyle="bold"
+            android:textColor="#FFf"
+            />
+        <TextView
+
+            android:layout_below="@+id/profile_image"
+            android:id="@+id/txtProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Huỳnh Nhã"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            />
+        <Button
+            android:id="@+id/btnThemTin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm tin"
+            android:background="@drawable/botron"
+            android:backgroundTint="#2E2EFE"
+            android:layout_below="@+id/txtProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:textColor="#fff"
+            android:drawableStart="@drawable/ic_baseline_add_circle_outline_24"
+            android:drawableLeft="@drawable/ic_baseline_add_circle_outline_24"
+            />
+        <Button
+            android:id="@+id/btn3cham"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btnThemTin"
+            android:layout_marginTop="245dp"
+            />
+            <TextView
+                android:id="@+id/txtDiaChi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sống tại Việt Nam"
+                android:drawableStart="@drawable/ic_baseline_house_24"
+                android:layout_below="@id/btnThemTin"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                />
+        <TextView
+            android:id="@+id/txtThamGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tham gia vào Tháng 8 năm 2018"
+            android:drawableStart="@drawable/ic_baseline_access_time_24"
+            android:layout_below="@id/txtDiaChi"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txtFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Có 258  người theo dõi"
+            android:drawableStart="@drawable/ic_baseline_library_add_check_24"
+            android:layout_below="@id/txtThamGia"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btnDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem danh sách bạn bè"
+            android:layout_below="@+id/txtFollow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            />
+
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottom"
+        android:background="#000"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

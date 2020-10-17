@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppTongHop</string>
+    <string name="Home">Trang chủ</string>
+    <string name="favoriet">SoThich</string>
+    <string name="profile">Tài khoản</string>
+
+
+</resources>

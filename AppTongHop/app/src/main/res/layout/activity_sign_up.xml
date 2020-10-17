@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/nensignup">
+    <TextView
+        android:id="@+id/txtCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:fontFamily="cursive"
+        android:layout_marginTop="60dp"
+        />
+    <EditText
+        android:id="@+id/edSUUserName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="User name"
+        android:layout_below="@id/txtCreate"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botron"
+        android:backgroundTint="#F2F2F2"
+
+        />
+    <EditText
+        android:id="@+id/edSUPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Passwrord"
+        android:layout_below="@id/edSUUserName"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botron"
+        android:backgroundTint="#F2F2F2"
+        />
+    <EditText
+        android:id="@+id/edSURePassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Repasswrord"
+        android:layout_below="@id/edSUPassword"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botron"
+        android:backgroundTint="#F2F2F2"
+        />
+    <Button
+        android:id="@+id/btnSUCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE"
+        android:layout_below="@id/edSURePassword"
+        android:layout_centerHorizontal="true"
+         android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/botron"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FE9A2E"
+        />
+    <TextView
+        android:id="@+id/txtContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact me! Fb: Huynh Nha"
+        android:textColor="#fff"
+        android:layout_below="@id/btnSUCreate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+
+        />
+</RelativeLayout>
