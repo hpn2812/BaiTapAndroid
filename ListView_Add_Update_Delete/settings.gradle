@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ListView_Add_Update_Delete"

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+   <ImageView
+       android:id="@+id/imgAnhSV"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+      />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_toRightOf="@+id/imgAnhSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+         <TextView
+        android:id="@+id/txtTuoi"
+        android:layout_below="@+id/txtName"
+        android:layout_toRightOf="@id/imgAnhSV"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuổi:     "
+    />
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_below="@+id/txtName"
+        android:layout_toRightOf="@id/txtTuoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+</RelativeLayout>
